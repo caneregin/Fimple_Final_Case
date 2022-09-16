@@ -1,0 +1,80 @@
+html {
+    font-size: 10px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.header {
+    height: 15rem;
+    width: 100%;
+    display: table;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 15rem;
+    width: 15%;
+    float: left;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.navi-items {
+    height: 15rem;
+    width: 80%;
+    float: left;
+}
+
+.header-button {
+    height: 15rem;
+    width: 5%;
+    float: left;
+    display: table;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.header-button-in {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header-ul {
+    height: 15rem;
+    width: 100%;
+    padding-top: 5.9rem;
+}
+
+.header-li {
+    display: inline;
+    color: #1A1B1E;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    width: 100%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    text-align: left;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.header-li:hover {
+    display: inline;
+    color: #337ab7;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    width: 100%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    text-align: left;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.header-img {
+    height: 100%;
+    width: 100%;
+}
