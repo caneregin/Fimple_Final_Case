@@ -1,5 +1,5 @@
 .main {
-  height: 54rem;
+  height: 62rem;
   width: 100%;
   border: 0.1rem solid #444;
   border-radius: 1rem;
@@ -78,7 +78,7 @@ select {
 .form-info {
   float: left;
   width: 10rem;
-  margin-top: 3rem;
+  margin-top: 4rem;
   text-align: left;
 }
 
@@ -86,7 +86,7 @@ select {
   float: left;
   height: 5.5rem;
   width: 37rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 
 }
 

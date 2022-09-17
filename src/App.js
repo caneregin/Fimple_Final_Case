@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
-import Form from './components/Form';
+import FormComponent from './components/FormComponent';
 import Footer from './components/Footer';
 import { InputProvider } from './contexts/InputContext';
 import { DataProvider } from "./contexts/DataContext"
@@ -14,7 +14,7 @@ function App() {
         <DataProvider>
           <PopUpProvider>
             <Header />
-            <Form />
+            <FormComponent />
             <Footer />
           </PopUpProvider>
         </DataProvider>

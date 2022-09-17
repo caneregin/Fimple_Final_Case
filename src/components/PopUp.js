@@ -40,7 +40,7 @@ const PopUp = forwardRef((props, ref) => {
         <div className="modal">
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
-            <h2>{termInterval} Ödeme Tablosu</h2>
+            <h1>{termInterval} Ödeme Tablosu</h1>
             <table>
               <tr>
                 <th>Taksit No</th>
@@ -64,9 +64,6 @@ const PopUp = forwardRef((props, ref) => {
 
               ))}
             </table>
-            <button className="close-modal" onClick={toggleModal}>
-              CLOSE
-            </button>
           </div>
         </div>
       )}
