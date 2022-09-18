@@ -5,21 +5,21 @@ import PopUpContext from "../contexts/PopUpContext";
 import "../PopUp.css";
 
 const PopUp = forwardRef((props, ref) => {
+  // Popup ekranda belirmesi
   const { modal, setModal } = useContext(PopUpContext)
-
-  const { loanAmount, setLoanAmount } = useContext(InputContext)
-  const { loanTerm, setLoanTerm } = useContext(InputContext)
-  const { interestRate, setInterestRate } = useContext(InputContext)
+  // Taksit aralığı
   const { termInterval, setTermInterval } = useContext(InputContext)
-  const { taxRate, setTaxRate } = useContext(InputContext)
+  // Gösterilecek olan tüm veriler
   const { data, setData } = useContext(DataContext)
 
+  //Üst Component'ten gelen fonksiyon çalıştırma isteği burada karşılanır ve 
+  // toogleModal sayesinde Popup ekranda belirir veya belirmez
   useImperativeHandle(ref,()=>({
     callChildFunction(){
       toggleModal()
     }
 }))
-  
+  // Ekranda belirip belirmeme toggle
   const toggleModal = () => {
     setModal(!modal);
   };
@@ -29,13 +29,8 @@ const PopUp = forwardRef((props, ref) => {
   } else {
     document.body.classList.remove('active-modal')
   }
-  console.log(data)
   return (
     <>
-      {/* <button onClick={toggleModal} className="btn-modal">
-        Open
-      </button> */}
-
       {modal && (
         <div className="modal">
           <div onClick={toggleModal} className="overlay"></div>
@@ -51,6 +46,7 @@ const PopUp = forwardRef((props, ref) => {
                 <th>KKDF</th>
                 <th>BSMV</th>
               </tr>
+              {/* data ile gelen veriler map edilir ve tablo içeriğine yazılır */}
               {data.map(item => (
                 <tr>
                   <td>{item.termNo}</td>
@@ -61,7 +57,6 @@ const PopUp = forwardRef((props, ref) => {
                   <td>{item.calculationKkdfRate}</td>
                   <td>{item.calculationBsmvRate}</td>
                 </tr>
-
               ))}
             </table>
           </div>

@@ -10,6 +10,8 @@ import { PopUpProvider } from "./contexts/PopUpContext"
 function App() {
   return (
     <div className="App">
+      {/* 3 Context kullanılmıştır. Bunlar InputContext, DataContext ve PopUpContext */}
+      {/* Header, FormComponent ve Footer Contextler ile sarmalanmıştır */}
       <InputProvider>
         <DataProvider>
           <PopUpProvider>

@@ -3,6 +3,7 @@ import "../Header.css"
 
 function Header() {
     return (
+        // Üst taraf Header bölümü içerikleri ve stil bilgileri
         <div className='header'>
             <div className='logo'><img className='header-img' src='https://fimple.co.uk/wp-content/uploads/2020/09/Fimple_Logo-edited-logo-2.svg'/></div>
             <div className='navi-items'>
@@ -15,7 +16,9 @@ function Header() {
                     <li className='header-li'>Contact Us</li>
                 </ul>
             </div>
-            <div className='header-button'><button className='header-button-in'>header</button></div>
+            <div className='header-button'>
+                <img className='header-button-in' src="header.png"  />
+                </div>
         </div>
     )
 }

@@ -3,6 +3,7 @@ import "../Footer.css"
 
 function Footer() {
     return (
+        // Alt taraf Footer içerikleri ve CSS bilgileri
         <div>
             <div className='footer-left'>
                 <div><img className='img-footer-logo' src='https://fimple.co.uk/wp-content/uploads/2020/10/Fimple_Logo-white-1536x710.png' /></div>

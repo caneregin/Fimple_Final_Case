@@ -3,6 +3,7 @@ import { createContext, useState } from "react";
 const InputContext = createContext()
 
 export const InputProvider = ({ children }) => {
+    // Girilecek input değerleri burada tanımlanmıştır.
     const [interestType, setInterestType] = useState("compound")
     const [loanAmount, setLoanAmount] = useState("")
     const [loanTerm, setLoanTerm] = useState("")
@@ -10,7 +11,6 @@ export const InputProvider = ({ children }) => {
     const [termInterval, setTermInterval] = useState("")
     const [kkdfRate, setKkdfRate] = useState("")
     const [bsmvRate, setBsmvRate] = useState("")
-    const [data, setData] = useState([])
     const values = {
         interestType,
         setInterestType,
@@ -25,9 +25,7 @@ export const InputProvider = ({ children }) => {
         kkdfRate,
         setKkdfRate,
         bsmvRate,
-        setBsmvRate,
-        data,
-        setData
+        setBsmvRate
     }
     return <InputContext.Provider value={values}>{children}</InputContext.Provider>
 }
