@@ -32,7 +32,7 @@ body.active-modal {
     padding: 14px 28px;
     border-radius: 3px;
     width: 120rem;
-    max-height: 80rem;
+    max-height: 50rem;
     overflow: auto;
 }
 
