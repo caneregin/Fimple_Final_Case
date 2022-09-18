@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Fimple Final Case
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Yayınlandı: "eklenecek"
 
-## Available Scripts
+## Açılış Ekranı
+![openingscreen](https://user-images.githubusercontent.com/36435160/190898301-b5d04386-79df-4f5c-8e79-e9e99dd0fc44.png)
 
-In the project directory, you can run:
+## Örnek Bileşik Aylık Hesaplama Girişi
+![finalcase1](https://user-images.githubusercontent.com/36435160/190898271-3eaa749e-4343-4f7f-a672-db9753739816.png)
 
-### `npm start`
+## Örnek Bileşik Aylık Hesaplama Görüntülenmesi
+![finalcase2](https://user-images.githubusercontent.com/36435160/190898338-93d56df9-38ea-4e15-a045-bc632489bbfd.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Örnek Basit Aylık Hesaplama Girişi
+![finalcase3](https://user-images.githubusercontent.com/36435160/190898371-9f850273-80aa-4d42-ac92-0b5990986e39.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Örnek Basit Aylık Hesaplama Görüntülenmesi
+![finalcase4](https://user-images.githubusercontent.com/36435160/190898384-4dbfd1e8-3505-4b97-8b7a-b656eb2b6571.png)
 
-### `npm test`
+## Bileşik Aylık Hesaplama Girişi
+![finalcase5](https://user-images.githubusercontent.com/36435160/190898411-4623c5f4-f3f1-4b83-998e-cd4d30e1a4a4.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Bileşik Aylık Hesaplama Görüntülenmesi
+![finalcase6](https://user-images.githubusercontent.com/36435160/190898420-48a89adc-6943-4b9f-a9b5-35ef51760c2b.png)
 
-### `npm run build`
+## Bileşik Haftalık Hesaplama Girişi
+![finalcase7](https://user-images.githubusercontent.com/36435160/190898470-f8a1de16-74d4-47a2-bd98-8675b06ab931.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Bileşik Haftalık Hesaplama Görüntülenmesi
+![finalcase8](https://user-images.githubusercontent.com/36435160/190898485-ce9a6758-0929-45f5-ac6e-0182c435b26a.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Bileşik Yıllık Hesaplama Girişi
+![finalcase9](https://user-images.githubusercontent.com/36435160/190898502-5440da76-cf43-45ad-88ab-9c325428728e.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Bileşik Yıllık Hesaplama Görüntülenmesi
+![finalcase10](https://user-images.githubusercontent.com/36435160/190898521-09fac007-7feb-4a13-baef-a5ce14cedaf3.png)
 
-### `npm run eject`
+## Formik & YUP form doğrulaması
+![finalcase12](https://user-images.githubusercontent.com/36435160/190898536-0f715d15-b96f-45ec-887e-dc9151e9a7b4.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## FormComponent tanımlamaları - useRef ve useContext kullanımı
+![finalcase11](https://user-images.githubusercontent.com/36435160/190898577-86a5e6aa-fea9-4fc7-a9a0-21da3e2c25d8.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Form içerisine değerler girildikten sonra Görüntüle (onSubmit) butonuna tıklandığında her bir değer kaydedilir ve Child Popup component içerisindeki fonksiyon çalıştırılır ve Popup penceresi açılır.
+![finalcase13](https://user-images.githubusercontent.com/36435160/190898653-b53afeda-4d76-472d-9c5f-21b216207108.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Butona tıklandığında değerler artık null değildir ve değişmiştir. Böylece ilgili useEffect tetiklenir ve hesaplama yapılıp setData aracılığıyla data içerisine kaydedilir. Compound seçiliyse buradaki if çalışır. Gerekirse Aylıktan yıllığa, yıllıktan aylığa, aylıktan haftalığa formülleri yorum içerisine yazılmıştır.
+![finalcase14](https://user-images.githubusercontent.com/36435160/190898762-7fd1f238-f6f4-4b29-a6fe-9866ff22e237.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Butona tıklandığında simple seçiliyse buradaki if çalışır ve aynı işlemler yapılır.
+![finalcase15](https://user-images.githubusercontent.com/36435160/190898779-869f855e-b01d-46e1-b819-b4f8f71c2eb7.png)
 
-## Learn More
+## Form doğrulama kuralları
+![finalcase16](https://user-images.githubusercontent.com/36435160/190898806-91a63193-0f22-4d2e-8424-9ab214a00444.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Formik içerisinde doğrulama yapılacak değerler initial value olarak verilmiştir. İlk değerleri useRef aracılığıyla current.value'den gelen değerlerdir. onSubmit yapıldığında yukarıda söz edilen fonksiyon çalışır.
+![finalcase17](https://user-images.githubusercontent.com/36435160/190898845-c4c5c761-e468-41a2-904f-59501511f3a1.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Form içerisindeki tanım yazıları
+![finalcase18](https://user-images.githubusercontent.com/36435160/190898872-088d5d9c-47ee-446f-b531-f250cd807039.png)
 
-### Code Splitting
+## Custom Input yapılmıştır. Input fonksiyonu burada her bir input için çalıştırılır. Input içeriğine name placeholder prop olarak verilir. ref verilerek useRef kullanılır.
+![finalcase19](https://user-images.githubusercontent.com/36435160/190898931-95f42c79-3f6e-4ee7-b945-ec8f41208ba4.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Custom Input Component - forwardRef kullanılmıştır. Parent'tan gelen ref ve props bilgisi alınır. Bilgiler input içerisinde tanımlanmıştır.
+![finalcase20](https://user-images.githubusercontent.com/36435160/190898958-58be50ec-f384-43bf-99e9-7aef3225f5ac.png)
 
-### Analyzing the Bundle Size
+## PopUp Component - Parent'tan gönderilen callChildFunction isteği burada karşılanır. forwardRef ile ref bilgisi alınır. useImperativeHandle kullanılarak parent'tan child içerisindeki fonksiyon çalıştırılır.
+![finalcase21](https://user-images.githubusercontent.com/36435160/190899045-5ffdc2a4-fd69-4bdd-87c8-141e7249f6b6.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## data içerisine kaydedilen veriler burada map edilir. 
+![finalcase22](https://user-images.githubusercontent.com/36435160/190899099-53f54847-7c9e-4db1-bf85-da9e2594615c.png)
 
-### Making a Progressive Web App
+## 3 React Context kullanılmıştır. Bunlar InputContext, DataContext ve PopUpContext olarak tanımlanmıştır.
+![finalcase28](https://user-images.githubusercontent.com/36435160/190899156-ad61e4de-c11b-4c25-bd8e-f3c3a12f2775.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## InputContext - input değerlerinin kaydedildiği context
+![finalcase25](https://user-images.githubusercontent.com/36435160/190899179-e7e0b2cc-184a-4f7d-b85a-2a7a56c023bb.png)
 
-### Advanced Configuration
+## DataContext - Hesaplanan verinin kaydedilmesinin yer aldığı context
+![finalcase26](https://user-images.githubusercontent.com/36435160/190899212-d42f57f6-df9a-4b53-bd3e-e9daab491554.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## PopUpContext - PopUp ekranda belirme ve belirmeme olayının olduğu context
+![finalcase27](https://user-images.githubusercontent.com/36435160/190899223-0f30a9a8-21ef-46ee-89fd-75fe2994920b.png)
 
-### Deployment
+## Header içeriği
+![finalcase23](https://user-images.githubusercontent.com/36435160/190899105-b0a14af0-dc3d-47f7-8089-b2d43090a0e1.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Footer içeriği
+![finalcase24](https://user-images.githubusercontent.com/36435160/190899108-fe14e945-c003-4acb-a899-13c9117862c8.png)
