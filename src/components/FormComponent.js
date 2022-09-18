@@ -26,6 +26,8 @@ function FormComponent() {
     const { kkdfRate, setKkdfRate } = useContext(InputContext)
     const { bsmvRate, setBsmvRate } = useContext(InputContext)
     const { data, setData } = useContext(DataContext)
+    const {totalPayment, setTotalPayment} = useContext(DataContext)
+    const {totalInterest, setTotalInterest} = useContext(DataContext)
     const PopupRef = useRef()
 
     // Görüntüle butonuna tıklandığında girilen değerler kaydediliyor
@@ -58,6 +60,10 @@ function FormComponent() {
                     let mainLoan = parseFloat(termAmount - (calculationInterestRate * (parseFloat(1) + kkdfRate + bsmvRate))).toFixed(2)
                     let remainingLoan = parseFloat(tempremainingLoan - mainLoan).toFixed(2)
                     if (remainingLoan < 1) { remainingLoan = parseFloat(0).toFixed(2) }
+                    let totalPayment = parseFloat(termAmount*loanTerm).toFixed(2)
+                    let totalInterest = parseFloat(totalPayment - loanAmount).toFixed(2)
+                    setTotalPayment(totalPayment)
+                    setTotalInterest(totalInterest)
                     setData(state => [...state, { termNo: termNo, termAmount: termAmount, mainLoan: mainLoan, remainingLoan: remainingLoan, calculationInterestRate: calculationInterestRate, calculationKkdfRate: calculationKkdfRate, calculationBsmvRate: calculationBsmvRate }])
                     tempLoan = tempLoan - termAmount
                     tempremainingLoan = parseFloat(tempremainingLoan - mainLoan).toFixed(2)
@@ -81,6 +87,10 @@ function FormComponent() {
                     let mainLoan = parseFloat(termAmount - (calculationInterestRate * (parseFloat(1) + kkdfRate + bsmvRate))).toFixed(2)
                     let remainingLoan = parseFloat(tempremainingLoan - mainLoan).toFixed(2)
                     if (remainingLoan < 1) { remainingLoan = parseFloat(0).toFixed(2) }
+                    let totalPayment = parseFloat(termAmount*loanTerm).toFixed(2)
+                    let totalInterest = parseFloat(totalPayment - loanAmount).toFixed(2)
+                    setTotalPayment(totalPayment)
+                    setTotalInterest(totalInterest)
                     setData(state => [...state, { termNo: termNo, termAmount: termAmount, mainLoan: mainLoan, remainingLoan: remainingLoan, calculationInterestRate: calculationInterestRate, calculationKkdfRate: calculationKkdfRate, calculationBsmvRate: calculationBsmvRate }])
                     tempLoan = tempLoan - termAmount
                     tempremainingLoan = parseFloat(tempremainingLoan - mainLoan).toFixed(2)

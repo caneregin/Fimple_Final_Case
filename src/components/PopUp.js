@@ -11,6 +11,10 @@ const PopUp = forwardRef((props, ref) => {
   const { termInterval, setTermInterval } = useContext(InputContext)
   // Gösterilecek olan tüm veriler
   const { data, setData } = useContext(DataContext)
+  // Toplam Ödenecek Tutar
+  const {totalPayment, setTotalPayment} = useContext(DataContext)
+  // Toplam Ödenecek Kâr Oranı
+  const {totalInterest, setTotalInterest} = useContext(DataContext)
 
   //Üst Component'ten gelen fonksiyon çalıştırma isteği burada karşılanır ve 
   // toogleModal sayesinde Popup ekranda belirir veya belirmez
@@ -36,6 +40,8 @@ const PopUp = forwardRef((props, ref) => {
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
             <h1>{termInterval} Ödeme Tablosu</h1>
+            <h2>Toplam Geri Ödeme: {totalPayment}</h2>
+            <h2>Toplam Vergiler Dahil Kâr Miktarı: {totalInterest}</h2>
             <table>
               <tr>
                 <th>Taksit No</th>
