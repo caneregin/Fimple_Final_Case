@@ -1,6 +1,6 @@
 # Fimple Final Case
 
-## Yayınlandı: "eklenecek"
+## Yayınlandı: https://63275d18748e56688218d296--zingy-swan-15fca8.netlify.app/
 
 ## Açılış Ekranı
 ![openingscreen](https://user-images.githubusercontent.com/36435160/190898301-b5d04386-79df-4f5c-8e79-e9e99dd0fc44.png)
